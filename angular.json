@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-http-client": {
+    "TALLER1": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-http-client",
+            "outputPath": "dist/TALLER1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-http-client:build"
+            "browserTarget": "TALLER1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-http-client:build:production"
+              "browserTarget": "TALLER1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-http-client:build"
+            "browserTarget": "TALLER1:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "angular-http-client-e2e": {
+    "TALLER1-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-http-client:serve"
+            "devServerTarget": "TALLER1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-http-client:serve:production"
+              "devServerTarget": "TALLER1:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "angular-http-client"
+  "defaultProject": "TALLER1"
 }
